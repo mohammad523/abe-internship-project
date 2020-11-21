@@ -1,0 +1,22 @@
+/** @format */
+
+div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	border: 0.1px solid black;
+	margin: 4px;
+	padding: 10px 30px;
+	border-radius: 10em;
+	border: none;
+}
+
+.widget {
+	border: 0.5px black solid;
+	border-radius: 30px;
+	padding: 30px;
+}
