@@ -27,7 +27,7 @@ const App = ({}) => {
 		const body = JSON.stringify(formData);
 
 		try {
-			const res = axios.post(`http://localhost:5000/api/users`, body, config);
+			const res = axios.post(`/api/users`, body, config);
 		} catch (err) {
 			alert("error");
 		}
