@@ -69,6 +69,20 @@ const App = ({}) => {
 				password,
 				password2,
 			});
+
+			setFormData({
+				name: "",
+				email: "",
+				phone: "",
+				legalIssue: "",
+				timezone: "",
+				apptOne: "",
+				apptTwo: "",
+				apptThree: "",
+				password: "",
+				password2: "",
+			});
+			alert("Your info has been sent!");
 		}
 	};
 	return (
@@ -129,9 +143,18 @@ const App = ({}) => {
 					</div>
 					<br />
 					<div>
-						<h4>Please choose your time zone</h4>
+						<h4>Please input your time zone</h4>
 						<br />
-						<select
+						<input
+							className='text-field'
+							type='timezone'
+							placeholder='Your Timezone'
+							value={timezone}
+							name='timezone'
+							onChange={(e) => onChange(e)}
+						/>
+
+						{/* <select
 							name='timezone_offset'
 							id='timezone-offset'
 							class='span5'
@@ -143,7 +166,7 @@ const App = ({}) => {
 							<option value='-06:00'>(GMT -06:00) Chicago CST</option>
 							<option value='-05:00'>(GMT -05:00) New York EST</option>
 							...
-						</select>
+						</select> */}
 						<h5>Choose 3 possible dates for a meeting</h5>
 						<input
 							className='text-field'
